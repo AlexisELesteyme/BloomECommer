@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOOM Moda y Estilo - Registrate</title>
+    <link rel="shortcut icon" href="./../assets/icons/icono.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./../css/style.css">
+
+    <!--Link Iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!--Fonts Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!--Link de Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Link de Bootstrap Java-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</head>
+
+<body class="Body-Registro">
+
+    <!--Banner Movil Cupon de Descuento-->
+    <div class="banner-movil">
+        <marquee behavior="run" scrolldelay="2" loop="infinite" direction="right">
+            <B class="mensaje-banner-movil"> Registrate y enterate de todas nuestras ofertas </B>
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                class="bi bi-ticket-detailed" viewBox="0 0 16 16">
+                <path
+                    d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5M5 7a1 1 0 0 0 0 2h6a1 1 0 1 0 0-2z" />
+                <path
+                    d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5V6a.5.5 0 0 1-.5.5 1.5 1.5 0 0 0 0 3 .5.5 0 0 1 .5.5v1.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 11.5V10a.5.5 0 0 1 .5-.5 1.5 1.5 0 1 0 0-3A.5.5 0 0 1 0 6zM1.5 4a.5.5 0 0 0-.5.5v1.05a2.5 2.5 0 0 1 0 4.9v1.05a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-1.05a2.5 2.5 0 0 1 0-4.9V4.5a.5.5 0 0 0-.5-.5z" />
+            </svg>
+        </marquee>
+    </div>
+
+    <!--Navbar-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./../index.html">
+                <img id="logo" src="./../assets/img/logo_bloom.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-4 my-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./mujer.html">Mujer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Index_Hombre">Hombre</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Ofertas
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #c29d83;">
+                            <li><a class="dropdown-item" href="#">Mujer</a></li>
+                            <li><a class="dropdown-item" href="#">Hombre</a></li>
+                            <li><a class="dropdown-item" href="#">Niño</a></li>
+                            <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./../pages/registrarse.html">Registrate</a>
+                    </li>
+                    <form class="d-flex" id="Buscar">
+                        <input class="form-control me-2" type="search" placeholder="Buscá tu producto"
+                            aria-label="Search" id="input">
+                        <button class="btn btn-outline-success" id="boton-buscar" type="submit">Buscar</button>
+                    </form>
+
+                </ul>
+
+               <!-- <div class="Login m-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                        <path fill-rule="evenodd"
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                    </svg>
+                    <button class="boton-entrar" type="submit" hfre=" ">Ingresar</button>
+                </div>
+
+                <div class="Comprar m-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        class="bi bi-bag-fill" viewBox="0 0 16 16" id="comprar">
+                        <path
+                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z" />
+                    </svg>
+
+                </div>-->
+
+            </div>
+        </div>
+    </nav>
+    
+    <!--Formulario de Registro-->
+    <form class="Registro-Form"  id= "Registro-Formu">
+        <h4>Crea Tu Cuenta</h4>
+
+        <div class="campo">
+        <input class="Controls" type="text" name="nombres" id="nombre" placeholder="Ingrese su nombre">
+        <span class="error" id="nombre-error"></span>
+        </div>
+
+        <div class="campo"> 
+        <input class="Controls" type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido">
+        <span class="error" id="apellido-error"></span>
+        </div>
+
+        <div class="campo">
+        <input class="Controls" type="email" name="email" id="email" placeholder="Ingrese su email">
+        <span class="error" id="email-error"></span>
+        </div>
+
+        <div class="campo">
+        <input class="Controls" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su contraseña">
+        <span class="error" id="contraseña-error"></span>
+        </div>
+
+        <div class="flex-container">
+            
+        <p>Estoy de acuerdo con <a class="boton" href="#">Terminos y Condiciones</a></p>
+
+        <button class= "botons" type="submit">Registrar</button>
+
+        <p><a class="boton" href="#">¿Ya tienes cuenta?</a></p>
+        </div>
+    </form>
+
+       <!-- Footer -->
+<footer class="bg-body-tertiary text-center">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Form -->
+      <section class="m-1">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Suscríbete y obten un 15% off en tu próxima compra</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div data-mdb-input-init class="form-outline mb-4">
+                <input type="email" id="form_suscripcion" class="form-control" />
+              </div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-auto">
+                <!-- Submit button -->
+                <button id="boton_suscribir" type="submit" class="btn mb-4">
+                    Suscribir
+                </button>
+            </div>
+          <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+  
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <p>
+            Lo mejor de la moda otoño invierno 2024. Tendencias, estilos, colecciones, looks, la moda en su versión otoño invierno 2024. Ropa de moda 2024 para mujer, calzado y accesorios 
+        </p>
+      </section>
+      <!-- Section: Text -->
+  
+      <!-- Section: Links -->
+      <section class="m-1">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Compañia</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!">Nosotros</a>
+              </li>
+              <li>
+                <a href="#!">Contáctanos</a>
+              </li>
+              <li>
+                <a href="#!">Privacidad</a>
+              </li>
+              <li>
+                <a href="#!">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Tienda</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="./pages/mujer.html">Mujeres</a>
+              </li>
+              <li>
+                <a href="#!">Hombres</a>
+              </li>
+              <li>
+                <a href="#!">Niños</a>
+              </li>
+              <li>
+                <a href="#!">Accesorios</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Ayuda</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!">Preguntas</a>
+              </li>
+              <li>
+                <a href="#!">Compras</a>
+              </li>
+              <li>
+                <a href="#!">Envíos</a>
+              </li>
+              <li>
+                <a href="#!">Estatus de orden</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Servicios</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!">Promociones</a>
+              </li>
+              <li>
+                <a href="#!">Tendencias</a>
+              </li>
+              <li>
+                <a href="#!">Asesoramiento</a>
+              </li>
+              <li>
+                <a href="#!">Franquicias</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+      <!-- Section: Social media -->
+      <section class="m-1">
+        <!-- Facebook -->
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3 bg-secondary text-white">
+      © 2024
+      <a class="text-reset fw-bold" href="./index.html">BLOOOM Moda y Estilo</a>
+      Todos los derechos reservados
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  <script src="./../js/index.js"></script>
+</body>
+</html>

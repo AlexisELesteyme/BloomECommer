@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+body {
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 100vh;
+}
+
+/*top--*/
+
+.banner-movil {
+    background-color: #565658;
+    width: 100%;
+    height: 50px;
+}
+
+.mensaje-banner-movil {
+    font-size: 25px;
+    color: #f5f5f5;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    position: relative;
+    align-items: center;
+}
+
+.banner-movil svg {
+    color: #f5f5f5;
+    padding-bottom: 10px;
+}
+
+#header{
+    z-index: 1;
+    position: relative;
+}
+
+/*Navbar*/
+
+.container-fluid {
+    background-color: #815542;
+    position: sticky;
+}
+
+#logo {
+    margin-left: 20px;
+    height: 60px;
+    width: auto;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.navbar-nav {
+    margin-left: 0.5rem;
+    position: relative;
+}
+
+.nav-item {
+    margin: 0.2rem 0.5rem;
+    font-size: 1.2rem;
+    align-items: center;
+    font-weight: 500;
+    width: 100%;
+}
+
+.nav-item .nav-link {
+    color: #c29d83;
+    margin-left: 2px;
+    text-shadow: 0px 0px 10px #565658;
+    transition: 0.5s ease;
+}
+
+.nav-item:hover {
+    background-color: #C29D83;
+    padding: 3px;
+    border: 2px solid #F5F5F5;
+    border-radius: 10px;
+}
+
+.dropdown-item {
+    position: relative;
+}
+
+#Buscar {
+    margin-left: 0.5rem;
+}
+
+#boton-buscar {
+    color: black;
+    font-weight: 600;
+    border: 2px solid #565658;
+    background-color: #C29D83;
+    border-radius: 10px;
+    width: 5.5rem;
+    height: auto;
+    border: #565658;
+}
+
+#boton-buscar:hover {
+    background-color: #C29D83;
+    padding: 10px;
+    border: 2px solid #F5F5F5;
+    border-radius: 10px;
+}
+
+#input {
+    border-radius: 10px;
+    width: 11rem;
+}
+
+.Login {
+    margin-right: 20px;
+}
+
+.boton-entrar {
+    background-color: #C29D83;
+    border-radius: 10px;
+    width: 5rem;
+    height: 45px;
+    border: #565658;
+    font-weight: 600;
+}
+
+.boton-entrar:hover {
+    background-color: #C29D83;
+    padding: 5px;
+    border: 2px solid #F5F5F5;
+    border-radius: 10px;
+}
+
+#comprar {
+    margin-right: 10px;
+}
+
+/*carrusel*/
+
+.carousel-inner {
+    height: 750px;
+}
+
+/*separación entre carroseul y banner de tendencia*/
+
+#carouselExampleIndicators,
+#tendencia {
+    margin-bottom: 50px
+}
+
+/*separación entre banner de tendencia y cards*/
+.banner-tendencias {
+    margin-bottom: 100px;
+}
+
+
+/*Banner de tendencias*/
+.banner-tendencias {
+    background-color: #815542;
+    width: 100%;
+    height: 80px;
+}
+
+.mensaje-banner-tendencia {
+    font-size: 50px;
+    color: #f5f5f5;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    position: relative;
+    align-items: center;
+}
+
+.banner-tendencias svg {
+    color: #f5f5f5;
+    padding-bottom: 10px;
+}
+
+
+/*Estilos de las Cards*/
+.container-card {
+    width: 100vw;
+    height: 50rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-card .card {
+    position: relative;
+    cursor: pointer;
+    padding-right: 1px;
+    padding-left: 1px;
+    align-content: center;
+    border: transparent;
+
+
+}
+
+.card .box {
+    width: 500px;
+    height: 600px;
+    transition: .5s;
+
+}
+
+.card .box1 {
+    position: relative;
+    background: #c29d83;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+    width: 300px;
+
+
+}
+
+
+
+
+
+.content h3 {
+    position: relative;
+    top: -24px;
+    padding: 8px;
+    color: #f5f5f5;
+    background: #815542;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.card-body h3{
+    position: relative;
+    padding: 8px;
+    color: #f5f5f5;
+    background: #815542;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.card .box2 {
+    position: relative;
+    background: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    box-sizing: border-box;
+    transform: translateY(-100px);
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 300px;
+
+
+}
+
+.card:hover .box2 {
+    transform: translateY(0);
+    box-shadow: 0 20px 15px 2px #fff;
+
+}
+
+.content .icon {
+    color: #c9ac2f;
+    font-size: 20px;
+
+}
+
+.icon img {
+    width: 20px;
+    height: 20px;
+    filter: invert(79%) sepia(41%) saturate(729%) hue-rotate(1deg) brightness(82%) contrast(94%);
+
+}
+
+.content p {
+    margin: 10px 0 0 0;
+    padding: 10;
+    font-size: medium;
+
+}
+
+.content a {
+    margin: 15px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 800;
+    color: #815542;
+    padding: 10px;
+    border: 1px solid #815542;
+    border-radius: 5px;
+
+
+}
+
+.content a:hover {
+    background: #C29D83;
+    color: #fff;
+    text-decoration: underline;
+}
+
+#precio {
+    font-size: 25px;
+    width: 600;
+}
+
+
+/*Estilos del formulario*/
+
+.Body-Registro{
+    background-color: #C29D83;
+}
+.Registro-Form{
+
+    width: 400px;
+    background: #815542;
+    padding: 30px;
+    margin: auto;
+    margin-top: 75px;
+    border-radius: 9px;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    box-shadow: 0px 0px 37px #000;
+    margin-bottom: 75px;
+
+}
+
+.Registro-Form h4{
+
+    font-size: 22px;
+    margin-bottom: 20px;
+    
+}
+.Controls{
+   
+    width: 100%;
+    background: #565658;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid gray;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    color: white;
+
+}
+.Registro-Form p{
+
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    color: #000;
+}
+.Registro-Form .boton {
+    color: black;
+}
+.Registro-Form a:hover{
+
+    color: white;
+    text-decoration: underline;
+    
+}
+
+
+.Registro-Form .botons{
+    width: 100%;
+    background: #58b4f7;
+    border-radius: 4px;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 20px 0;
+    font-size: 16px;
+    
+
+}
+.Registro-Form .botons:hover{
+    background: #4699d6;
+}
+
+
+/*Estilos del footer*/
+footer{
+    background-color: #815542;
+    color:#f5f5f5;
+}
+
+footer a{
+    text-decoration: none;
+    
+}
+
+footer li a{
+    color: #EBE3D5!important;
+}
+
+footer i{
+    font-size: 1.2rem;
+    color: #7BC9FF;
+}
+
+#boton_suscribir{
+    background-color: #7BC9FF;
+    color: #FEFBF6;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#myFooter{
+    margin: 2rem 0;
+
+}
