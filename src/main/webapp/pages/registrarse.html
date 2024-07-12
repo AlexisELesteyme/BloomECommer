@@ -116,11 +116,11 @@
     </nav>
     
     <!--Formulario de Registro-->
-    <form class="Registro-Form"  id= "Registro-Formu">
+    <form class="Registro-Form" action="/BloomProyectoFinal/Registro" method="post" id= "Registro-Formu">
         <h4>Crea Tu Cuenta</h4>
 
         <div class="campo">
-        <input class="Controls" type="text" name="nombres" id="nombre" placeholder="Ingrese su nombre">
+        <input class="Controls" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
         <span class="error" id="nombre-error"></span>
         </div>
 
@@ -135,7 +135,7 @@
         </div>
 
         <div class="campo">
-        <input class="Controls" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su contraseña">
+        <input class="Controls" type="password" name="password" id="contraseña" placeholder="Ingrese su contraseña">
         <span class="error" id="contraseña-error"></span>
         </div>
 
@@ -329,5 +329,16 @@
   </footer>
   <!-- Footer -->
   <script src="./../js/index.js"></script>
+  
+   <!--<script>
+      window.onload= function(){
+          var urlParams = new URLSearchParams(window.location.search);
+          if(urlParams.get('exito') === 'true'){
+            document.getElementById('mensajeExito').style.display = 'block';   
+          } else if(urlParams.get('error') === 'true'){
+            document.getElementById('mensajeError').style.display = 'block';
+          }
+        };
+  </script>-->
 </body>
 </html>
